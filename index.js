@@ -1,4 +1,4 @@
-console.log("start")
+function ASD(){console.log("start")
 
 const IS_WEB = !!globalThis.window;
 globalThis._require = globalThis.require;
@@ -26,3 +26,4 @@ else{
   globalThis.__filename = globalThis.process.argv[1];
 }
 console.log("end")
+}
