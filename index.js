@@ -1,3 +1,5 @@
+console.log("start")
+
 const IS_WEB = !!globalThis.window;
 globalThis._require = globalThis.require;
 
@@ -23,3 +25,4 @@ else{
   globalThis.__dirname = globalThis.process.cwd();
   globalThis.__filename = globalThis.process.argv[1];
 }
+console.log("end")
