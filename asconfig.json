@@ -1,0 +1,4 @@
+{
+  "outDir": "./",    /* Specify an output folder for all emitted files. */
+  "inpDir": "./"     /* Specify an input folder for all input files. */
+}
