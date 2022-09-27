@@ -10,7 +10,7 @@ if(IS_WEB){
     const res = await fetch(path);
     const text = await res.text();
     const module = { exports: {} };
-    new Function('module', 'exports', text)(module, module.exports);
+    new Function('module', 'exports', 'require', text)(module, module.exports, globalThis.require);
     return module.exports;
   };
   globalThis.__dirname = globalThis.location.href.split('/').slice(0, -1).join('/');
