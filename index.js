@@ -17,8 +17,6 @@ if (IS_WEB) {
         new Function('module', 'exports', 'include', text)(module, module.exports, globalThisA.include);
         return module.exports;
     };
-    globalThisA.__dirname = globalThis.location.href.split('/').slice(0, -1).join('/');
-    globalThisA.__filename = globalThis.location.href;
 }
 else {
     globalThisA.include = async function (path) {
