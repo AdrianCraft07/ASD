@@ -1,6 +1,5 @@
 "use strict";
 const IS_WEB = !!globalThis.window;
-globalThis.require = require;
 const globalThisA = globalThis;
 if (!IS_WEB) {
     const request = require('./request');
