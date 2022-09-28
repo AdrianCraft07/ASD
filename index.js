@@ -1,12 +1,10 @@
 "use strict";
 const IS_WEB = !!globalThis.window;
 const globalThisA = globalThis;
+globalThis.module||={}
 if (!IS_WEB) {
     const request = require('./request');
     globalThisA.fetch = request;
-}
-else{
-    const module = {}
 }
 
 if (IS_WEB) {
